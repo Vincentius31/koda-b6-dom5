@@ -138,5 +138,40 @@
 
 .featured-content img{
     padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/* Secondary Content */
+
+.secondary-content{
+    display: flex;
+    padding-top: 40px;
+    width: 70%;
+    margin-left: 150px;
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    gap: 50px;
+}
+
+.content-desc{
+    text-align: center;
+}
+
+.content-desc p{
+    margin-top: 15px;
+}
+
+.btn-view{
+    display: inline-block; 
+    padding: 10px 30px;
+    background-color: #fff; 
+    color: lightblue;
+    border-color: lightblue;
+    text-decoration: none; 
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
