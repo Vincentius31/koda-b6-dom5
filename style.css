@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.navbar{
+    position: relative;
+}
+.navbar > h1{
+    position: absolute;
+    font-size: 40px;
+    padding-left: 75px;
+    padding-top: 10px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    left: 62%;
+    padding-top: 35px;
+}
+
+.navbar li{
+    font-size: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px){
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        left: 50px;
+        top: 70px;
+        padding-top: 40px;
+    }
+}
+
+
