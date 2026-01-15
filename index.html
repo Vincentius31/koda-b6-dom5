@@ -11,15 +11,18 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-logo">
-            Simply<span>.</span>
+        <a href="#" class="logo">Simply<span>.</span></a>
+        <div class="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#Blog" class="nav-link">Blog</a>
         </div>
-        <ul class="navbar-menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">BLOG</a></li>
-        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
 
     <section class="hero-section">
@@ -79,6 +82,23 @@
         <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ex esse quibusdam dolorem eos ducimus provident expedita perferendis rerum unde optio officiis animi voluptates harum quas labore maiores! Molestiae sint voluptatem adipisci incidunt maxime quod facilis amet fugit perspiciatis dolorem. Laboriosam sunt, nihil culpa obcaecati suscipit quis. Totam, sapiente.</P>
         <a href="#" class="btn-view">View More</a>
     </section>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active"); 
+            navMenu.classList.toggle("active"); 
+        });
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+    </script>
 
 </body>
 </html>
