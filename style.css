@@ -6,38 +6,69 @@
 
 /* Navbar Section */
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    color:#333;
-    padding: 10px 20px;
-    height: 60px;
+    padding: 1rem 1.5rem;
+    background-color: black;
+    color: white;
 }
 
-.navbar-logo{
-    font-size: 30px;
-    font-weight: 400;
-    padding-left: 150px;
-}
-
-.navbar-logo span{
-    color: lightblue;
-}
-
-.navbar-menu{
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    padding-right: 120px;
-    padding-top: 10px;
-}
-
-.navbar-menu li a{
-    color: #333;
+.logo{
+    color: white;
     text-decoration: none;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+}
+
+.bar {
     display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+
+    .nav-link{
+        color: black;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%; 
+        top: 60px; 
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
 }
 
 /* Hero Section */
@@ -194,4 +225,6 @@
 .heard-section p{
     width: 75%;
 }
+
+
 
